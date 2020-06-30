@@ -1,0 +1,6 @@
+#!/usr/bin/execlineb -P
+with-contenv
+
+cd /enms
+
+exec gunicorn --config=gunicorn.py app:app
